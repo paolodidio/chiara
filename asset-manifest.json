@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/chiara/static/css/main.5f361e03.chunk.css",
+    "main.js": "/chiara/static/js/main.035c9a91.chunk.js",
+    "main.js.map": "/chiara/static/js/main.035c9a91.chunk.js.map",
+    "runtime-main.js": "/chiara/static/js/runtime-main.687108d4.js",
+    "runtime-main.js.map": "/chiara/static/js/runtime-main.687108d4.js.map",
+    "static/js/2.3b7cc3d8.chunk.js": "/chiara/static/js/2.3b7cc3d8.chunk.js",
+    "static/js/2.3b7cc3d8.chunk.js.map": "/chiara/static/js/2.3b7cc3d8.chunk.js.map",
+    "index.html": "/chiara/index.html",
+    "precache-manifest.4fcf909aca9c602e94bb071578baae38.js": "/chiara/precache-manifest.4fcf909aca9c602e94bb071578baae38.js",
+    "service-worker.js": "/chiara/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/chiara/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.3b7cc3d8.chunk.js.LICENSE.txt": "/chiara/static/js/2.3b7cc3d8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.687108d4.js",
+    "static/js/2.3b7cc3d8.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.035c9a91.chunk.js"
+  ]
+}
