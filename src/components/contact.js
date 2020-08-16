@@ -8,13 +8,8 @@ export default function Contact(props){
                 {props.address}<br/>
                 non funziona la mail
                 <a href={"mailto:"+props.email}>{props.email}</a><br/>
-{/*
-                <Link
-                    name="chiarafranchina"
-                    href="https://www.instagram.com/chiarafranchina"
-                 />
-                 <br/>*/}
-                <a href={"https://www.instagram.com/"+props.instagram}>{props.instagram}</a>
+                <a href={"https://www.instagram.com/"+props.instagram}>{props.instagram}</a><br/>
+                <a href={"https://www.youtube.com/"+props.youtube}>{props.youtube}</a>
             </p>
         </div>
     );

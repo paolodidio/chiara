@@ -60,6 +60,7 @@ class App extends Component {
                                    address="Non lo so"
                                    email="non@ricordo.più"
                                    instagram="chiarafranchina"
+                                   youtube="nonricordoilyoutubbbo"
                             />
                            <Credits
                                developer="PaoLo Di Dio"
