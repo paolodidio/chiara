@@ -14,41 +14,13 @@ import Box from '@material-ui/core/Box';
 import Home from './home.js';
 import Gallery from './gallery.js';
 
-const useStyles = makeStyles({
-  root: {
-    width: 500,
-  },
-});
 
-
-export default function Footer(props){
-
-      const classes = useStyles();
-      const [value, setValue] = React.useState(0);
+export default function Navbar(props){
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
       };
 
-    function TabPanel(props) {
-      const { children, value, index, ...other } = props;
-
-      return (
-        <div
-          role="tabpanel"
-          hidden={value !== index}
-          id={`simple-tabpanel-${index}`}
-          aria-labelledby={`simple-tab-${index}`}
-          {...other}
-        >
-          {value === index && (
-            <Box p={3}>
-              <Typography>{children}</Typography>
-            </Box>
-          )}
-        </div>
-      );
-    }
 
     return(
 
@@ -71,26 +43,6 @@ export default function Footer(props){
     <TabPanel value={value} index={2}>
       Item Three
     </TabPanel>
-
-
-    <div>
-        <BottomNavigation
-        value={value}
-              onChange={(event, newValue) => {
-                setValue(newValue);
-              }}
-              showLabels
-              className={classes.root}
-        >
-          <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-                <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-                <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
-          </BottomNavigation>
-
-        <div>
-            {props.children}
-        </div>
-    </div>
 
 </div>
     );

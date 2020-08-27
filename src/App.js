@@ -9,6 +9,8 @@ import MyPhotos from './components/my-photos.js'
 import Footer from './components/footer.js'
 import Contact from './components/contact.js'
 import Credits from './components/credits.js'
+import Gallery from './components/gallery.js'
+
 
 
 class App extends Component {
@@ -25,7 +27,7 @@ class App extends Component {
                                   <Link to="/home">Home</Link>
                                 </li>
                                 <li>
-                                  <Link to="/my-photos">Foto</Link>
+                                  <Link to="/gallery">Foto</Link>
                                 </li>
                                 <li>
                                   <Link to="/my-videos">Video</Link>
@@ -40,9 +42,12 @@ class App extends Component {
                               <Route exact path="/">
                                 <Redirect to="/home" />
                               </Route>
+                              <Route exact path="/chiara">
+                                    <Redirect to="/home" />
+                              </Route>
 
-                              <Route path="/my-photos">
-                                <MyPhotos/>
+                              <Route path="/gallery">
+                                <Gallery/>
                               </Route>
                               <Route path="/my-videos">
                                 <MyVideos/>
