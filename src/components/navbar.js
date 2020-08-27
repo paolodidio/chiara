@@ -1,7 +1,6 @@
 import React from 'react'
 import BottomNavigation from '@material-ui/core/BottomNavigation'
 import BottomNavigationAction from  '@material-ui/core/BottomNavigationAction'
-import minion2 from '../photos/minion2.jpg';
 import RestoreIcon from '@material-ui/icons/Restore';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
@@ -13,7 +12,8 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Home from './home.js';
 import Gallery from './gallery.js';
-
+import PhotoGallery from './photo-gallery.js';
+import minion2 from '../photos/minion2.jpg';
 
 export default function Navbar(props){
 
@@ -21,27 +21,47 @@ export default function Navbar(props){
         setValue(newValue);
       };
 
+    const [value, setValue] = React.useState(0);
+
+    function TabPanel(props) {
+          const { children, value, index, ...other } = props;
+
+          return (
+            <div
+              role="tabpanel"
+              hidden={value !== index}
+              id={`simple-tabpanel-${index}`}
+              aria-labelledby={`simple-tab-${index}`}
+              {...other}
+            >
+              {value === index && (
+                <Box p={3}>
+                  <Typography>{children}</Typography>
+                </Box>
+              )}
+            </div>
+          );
+        }
+
 
     return(
 
 <div>
     <AppBar position="static">
       <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
-        <Tab label="Item One {...a11yProps(0)} "/>
-        <Tab label="Item Two {...a11yProps(1)} "/>
-        <Tab label="Item Three {...a11yProps(2)} "/>
+        <Tab label="Home {...a11yProps(0)} "/>
+        <Tab label="Photos {...a11yProps(1)} "/>
+        <Tab label="Videos {...a11yProps(2)} "/>
       </Tabs>
     </AppBar>
     <TabPanel value={value} index={0}>
-      Item One
       <Home/>
     </TabPanel>
     <TabPanel value={value} index={1}>
-      Item Two
-      <Gallery/>
+      <PhotoGallery/>
     </TabPanel>
     <TabPanel value={value} index={2}>
-      Item Three
+      <Gallery/>
     </TabPanel>
 
 </div>
