@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom'
 
-import Home from './components/home'
-import MyVideos from './components/my-videos.js'
-import MyPhotos from './components/my-photos.js'
 import Footer from './components/footer.js'
 import Contact from './components/contact.js'
 import Credits from './components/credits.js'
-import Gallery from './components/gallery.js'
 import NavBar from './components/navbar.js'
 
 import forest from './photos/forest2.png'

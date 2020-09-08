@@ -1,9 +1,4 @@
-import React, { Component, useEffect, useRef } from 'react'
-
-import Photo from './photo.js'
-import Title from './title.js'
-
-import forest from '../photos/forest-test.jpg'
+import React, {useEffect, useRef } from 'react'
 
 import '../../node_modules/photoswipe/dist/photoswipe.css';
 import '../../node_modules/photoswipe/dist/default-skin/default-skin.css';
