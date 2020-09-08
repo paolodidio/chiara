@@ -53,6 +53,13 @@ export default function Gallery () {
         ))}
       </div>
       <PhotoSwipeWrapper isOpen={isOpen} index={index} items={items} onClose={handleClose} />
+
+      <h1>asdaosdjasjdoasodjoasdjoj 1</h1>
+
+      <h1>asdaosdjasjdoasodjoasdjoj 2</h1>
+      <h1>asdaosdjasjdoasodjoasdjoj 3</h1>
+      <h1>asdaosdjasjdoasodjoasdjoj 4</h1>
+      <h1>asdaosdjasjdoasodjoasdjoj finale</h1>
     </Fragment>
   );
 };

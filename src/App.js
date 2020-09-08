@@ -12,14 +12,27 @@ import Credits from './components/credits.js'
 import Gallery from './components/gallery.js'
 import NavBar from './components/navbar.js'
 
+import forest from './photos/forest2.png'
 
 class App extends Component {
   render() {
+
+  const bodyStyle={
+        height: "100%",
+        minHeight:"700px",
+        backgroundImage: "url(" + forest + ")",
+        backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        backgroundColor: "blue",
+      };
+
+
     return (
       <div>
-
+            <div style={bodyStyle}>
             <NavBar/>
-
+            </div>
             <Footer>
                            <Contact
                                    fullName="Chiara Franchina"

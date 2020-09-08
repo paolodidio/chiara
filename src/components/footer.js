@@ -50,8 +50,16 @@ export default function Footer(props){
       );
     }
 
+    const footerStyle={
+      position: "absolute",
+      width: "100%",
+      backgroundColor: "red",
+      color: "white",
+      textAlign: "center",
+    };
+
     return(
-        <div>
+        <div style={footerStyle}>
             {props.children}
         </div>
     );
